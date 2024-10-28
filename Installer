@@ -1,3 +1,5 @@
+wheels
+aiohttp
 gunicorn
 flask
 async-lru==2.0.2
