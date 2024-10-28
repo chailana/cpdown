@@ -14,4 +14,4 @@ WORKDIR /app/
 RUN pip3 install --no-cache-dir --upgrade --requirement Installer --break-system-packages
 
 # Run the application
-CMD gunicorn app:app & python3 modules/main.py
+CMD gunicorn app:app & python3 main.py
