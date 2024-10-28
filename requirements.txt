@@ -26,3 +26,5 @@ certifi
 charset-normalizer
 idna
 mutagen
+gunciorn
+flask
