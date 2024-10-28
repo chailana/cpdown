@@ -1,8 +1,8 @@
 FROM ubuntu:latest
 
-# Update and install required dependencies
+# Update and install required dependencies, including python3-dev for building packages
 RUN apt-get update -y && apt-get upgrade -y \
-    && apt-get install -y --no-install-recommends gcc libffi-dev musl-dev ffmpeg aria2 python3-pip \
+    && apt-get install -y --no-install-recommends gcc libffi-dev musl-dev ffmpeg aria2 python3-pip python3-dev \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
