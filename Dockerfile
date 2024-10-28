@@ -14,5 +14,5 @@ WORKDIR /app/
 COPY requirements.txt /app/
 RUN pip3 install --no-cache-dir --upgrade --requirement requirements.txt --break-system-packages
 
-# Run the application
-CMD gunicorn app:app & python3 main.py
+# Run both Gunicorn and main.py in the same CMD to keep both running
+CMD gunicorn app:app && python3 main.py
