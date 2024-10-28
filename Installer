@@ -1,4 +1,4 @@
-wheels
+wheel
 gunicorn
 flask
 async-lru==2.0.2
